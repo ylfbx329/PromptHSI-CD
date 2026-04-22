@@ -12,7 +12,7 @@ Create the conda environment using the provided configuration file:
 conda env create -f environment.yml
 ```
 
-## 2. Download Pretrained Weights
+## 2. Download Pretrained Weights and Datasets
 
 Download the pretrained **ViT-B-16** weights from the [official CLIP link](https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt),
 and place the file at:
@@ -20,6 +20,9 @@ and place the file at:
 ```text
 pretrained/ViT-B-16.pt
 ```
+
+Only the Chinese farmland dataset is included in this repository.
+For the other four datasets used in the paper, please download them from [Google Drive](https://drive.google.com/drive/folders/1rT4BMEwePcGgTvMX4PlqeGHj9jHcgXRN?usp=sharing)
 
 ## 3. Configuration
 
@@ -64,3 +67,7 @@ python -m src.main -cfg configs/PromptHSICD/river.yaml -test
 python -m src.main -cfg configs/PromptHSICD/santa.yaml -test
 python -m src.main -cfg configs/PromptHSICD/bay.yaml -test
 ```
+
+## 7. Results
+
+All outputs will be saved in `outputs/PromptHSICD_<dataset_name>`
