@@ -1,0 +1,9 @@
+data:
+  name: 'bay area'
+  patch_size: 15
+
+model:
+  in_channels: 224
+  image_size: 15
+  patch_size: 3
+  k: 14

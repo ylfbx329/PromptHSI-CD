@@ -1,0 +1,9 @@
+data:
+  name: 'river'
+  patch_size: 5
+
+model:
+  in_channels: 198
+  image_size: 5
+  patch_size: 1
+  k: 15

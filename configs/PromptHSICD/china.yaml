@@ -1,0 +1,9 @@
+data:
+  name: 'china farmland'
+  patch_size: 5
+
+model:
+  in_channels: 154
+  image_size: 5
+  patch_size: 1
+  k: 15

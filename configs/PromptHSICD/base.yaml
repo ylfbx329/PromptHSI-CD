@@ -1,0 +1,45 @@
+device: 'cuda:0'
+seed: 1
+#resume: "epoch4.pth" # 断点续训使用的检查点，从头训练时删除
+
+data:
+  root: 'data'
+  text: 'text.txt'
+  split: 'stratify'
+  train_ratio: 0.01
+
+model:
+  name: 'PromptHSICD'
+
+loss:
+  name: 'FocalLoss'
+  alpha: 0.25
+  gamma: 2
+  reduction: 'mean'
+  star: false
+
+optim:
+  name: 'Adam' # optimizer类名
+  lr: 0.0001
+
+sched: # [可选]调度器设置
+  name: 'CosineAnnealingLR' # scheduler类名
+  T_max: 100                 # scheduler构建时使用的参数，必须严格符合其声明
+
+train:
+  epochs: 100
+  batch_size: 64
+  log_iter: 0               # 一个epoch中打印日志的频率，不需要时设置为零
+  val_start: 1
+  val_epoch: 1              # 使用验证集验证模型的频率
+  save_epoch: 100            # 保存ckpt的频率
+
+val:
+  batch_size: 1000
+  log_iter: 0
+#  ckpt: 'epoch100.pth'        # 用于验证的ckpt
+
+test:
+  batch_size: 1000
+  log_iter: 0
+  ckpt: 'best_val.pth'       # 用于测试的ckpt
