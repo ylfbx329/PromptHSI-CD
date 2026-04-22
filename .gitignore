@@ -1,5 +1,6 @@
 .idea/
 /data/*
+!data/text.txt
 !/data/Chinese\ farmland/
 !/data/Chinese\ farmland/China_Change_Dataset.mat
 /pretrained/*

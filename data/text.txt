@@ -1,0 +1,56 @@
+airport
+bare land
+basketball court
+beach
+bridge
+dense residential
+farmland
+forest
+freeway
+ground track field
+harbor
+island
+lake
+meadow
+mine
+mountain
+oil tank
+runway
+sea
+solar panel
+stadium
+tennis court
+terrace
+wetland
+commercial area
+cotton field
+industrial area
+railway
+interchange
+single-family residential
+highway
+intersection
+golf course
+desert
+river
+campus
+prairie
+building
+fertile land
+park
+parking lot
+square
+road
+tree
+cars
+shrubbery
+impermeable surface
+ship
+airplane
+pond
+church
+chaparral
+storage tanks
+snow land
+container
+cabin
